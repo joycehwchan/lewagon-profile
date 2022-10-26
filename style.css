@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Fira+Mono:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+
+:root {
+  --main-background-color: #1C1F22;
+  --main-pink: #DD425A;
+}
+
+body {
+  font-family: 'Fira Mono', monospace;
+  font-weight: 400;
+  background-color: var(--main-background-color);
+  color: rgba(225, 225, 225, 0.8);
+  font-size: 0.8rem;
+  background-color: #1C1F22;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232B3035' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%232E3338'%3E%3Ccircle cx='769' cy='229' r='8'/%3E%3Ccircle cx='539' cy='269' r='8'/%3E%3Ccircle cx='603' cy='493' r='8'/%3E%3Ccircle cx='731' cy='737' r='8'/%3E%3Ccircle cx='520' cy='660' r='8'/%3E%3Ccircle cx='309' cy='538' r='8'/%3E%3Ccircle cx='295' cy='764' r='8'/%3E%3Ccircle cx='40' cy='599' r='8'/%3E%3Ccircle cx='102' cy='382' r='8'/%3E%3Ccircle cx='127' cy='80' r='8'/%3E%3Ccircle cx='370' cy='105' r='8'/%3E%3Ccircle cx='578' cy='42' r='8'/%3E%3Ccircle cx='237' cy='261' r='8'/%3E%3Ccircle cx='390' cy='382' r='8'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+
+.container {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2.8rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.025rem;
+}
+
+h1 em {
+  color: var(--main-pink);
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h2 em {
+   color: var(--main-pink);
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+em {
+  color: var(--main-pink);
+  font-style: normal;
+}
+
+p.self-intro {
+  border: none;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+p#quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.typewriter {
+  width: fit-content;
+}
+.typewriter p{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .40em solid #add44e; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #add44e; }
+}
+
+.language-icon{
+  max-width: 4rem;
+  margin: 0.4rem 0.8rem;
+}
+
+a.button {
+  background-color: rgba(173, 212, 78, 0.8);
+  color: rgba(28, 31, 34, 0.8);
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  display: inline;
+  width: fit-content;
+}
+
+a.button:hover {
+  background-color: rgba(173, 212, 78, 0.9);
+  color: rgba(28, 31, 34, 0.9);
+}
+
+.fa-brands {
+  font-size: 2.8rem;
+  margin: 0.4rem 0.8rem;
+}
+
+a, .fa-brands {
+  text-decoration: none;
+  color: rgba(173, 212, 78, 0.8);
+  cursor: pointer;
+  transition-duration: 160ms;
+}
+
+a:hover, .fa-brands:hover {
+  color: rgba(173, 212, 78, 1);
+  scale: 1.025;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  list-style-image: none;
+  display: inline;
+  padding-left: 0;
+}
+
+div#top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.section-intro {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+#profile {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.section {
+  margin: 8rem 2rem;
+  padding: 4rem 2.4rem;
+  border-radius: 10px;
+  background: #1C1F22;
+  box-shadow:  12px 12px 21px #17191c,
+              -12px -12px 21px #212528;
+  /* transition-duration: 160ms; */
+}
+
+.section:hover {
+  /* scale: 1.02; */
+  border-radius: 10px;
+  background: linear-gradient(145deg, #191c1f, #1e2124);
+  box-shadow:  12px 12px 21px #17191c,
+              -12px -12px 21px #212528;
+}
+
+.section-body {
+  margin: 12px 16px;
+  padding: 3rem 16px;
+  border-left: 1px solid rgba(225, 225, 225, 0.4);
+  line-height: 1.6rem;
+}
+
+/* Responsive Design */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 90vw;
+  }
+
+  div#top {
+    flex-direction: column;
+  }
+  .section-intro {
+    flex-direction: column;
+  }
+
+  #profile {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 100vw;
+  }
+
+}
