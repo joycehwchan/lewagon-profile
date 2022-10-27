@@ -1,0 +1,29 @@
+h1 {
+  font-family: 'Courier Prime', monospace;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.025rem;
+}
+
+h1 em {
+  color: var(--main-pink);
+  font-style: normal;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h2 em {
+   color: var(--main-pink);
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+em {
+  color: var(--main-pink);
+  font-style: normal;
+}

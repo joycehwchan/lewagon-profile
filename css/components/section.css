@@ -1,0 +1,91 @@
+.section {
+  margin: 2rem 2rem;
+  padding: 2.4rem;
+}
+
+.section-body {
+  margin: 12px 16px;
+  padding: 2rem 16px;
+  border-left: 1px solid rgba(225, 225, 225, 0.4);
+  line-height: 1.6rem;
+}
+
+/* Top (self intro) */
+
+.section#top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.section-intro {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.profile-pic {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 8px;
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  transition: transform 100ms ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: rotate(1deg);
+}
+
+p.self-intro {
+  border: none;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.section#about a {
+  color: rgba(225, 225, 225, 0.8);
+  text-decoration: underline;
+}
+
+.section#about a:hover {
+  color: var(--main-pink);
+}
+
+/* Quote */
+
+p#quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media (max-width: 960px) {
+  .section#top {
+    flex-direction: column;
+  }
+
+  .section-intro {
+    flex-direction: column;
+    order: 2;
+  }
+
+  .section-img {
+    order: 1;
+  }
+
+  .profile-pic  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .section {
+    margin: 1.2rem 0.4rem;
+    padding: 1rem;
+  }
+}

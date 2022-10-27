@@ -1,0 +1,33 @@
+.nav-container {
+  width: 100vw;
+  height: 4rem;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  font-size: 1.025rem;
+  text-align: center;
+}
+
+.nav-container li {
+  list-style-image: none;
+  display: inline;
+  padding-left: 0;
+}
+
+@media (max-width: 540px) {
+
+  .nav-container ul {
+    font-size: 1rem;
+    padding: 0 2rem;
+    gap: 1.2rem;
+    font-size: 1rem;
+  }
+
+}

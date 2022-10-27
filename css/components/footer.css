@@ -1,0 +1,16 @@
+.footer {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer li {
+  list-style-image: none;
+  display: inline;
+  padding-left: 0;
+}
+
+.footer .fa-instagram {
+  cursor: not-allowed;
+}

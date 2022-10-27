@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <nav>
@@ -17,7 +17,7 @@
       <ul>
         <li><a href="#about">#About_me</a></li>
         <li><a href="#project">#Projects</a></li>
-        <li><a href="#">#Contact_me</a></li>
+        <li><a href="#">#日本語</a></li>
       </ul>
     </div>
   </nav>
@@ -32,7 +32,7 @@
           </p>
           <br>
         </div>
-        <a href="https://github.com/joycehwchan" class="button">Contact me</a>
+        <a href="#" class="button">Contact me</a>
       </div>
       <div class="section-img" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
         <div class="profile-pic" style="background-image:url(images/profile.jpg);">
@@ -44,9 +44,12 @@
       <h2>&lt;<em>about</em>&gt;</h2>
       <div class="section-body">
         <p>
-          Born in Canada, raised in Hong Kong, currently residing in <em>Tokyo</em>, Japan.
+          Born in Canada 🇨🇦, raised in Hong Kong 🇭🇰, currently residing in <em>Tokyo</em>, Japan 🇯🇵.<br>
+          Previously a Coordinator for International Relations in the City Hall of Kashihara, Nara.
           <br><br>
-          After learning HTML, CSS, and JavaScript on my own, I decided to join a full-stack web development at <em>Le Wagon Tokyo</em>, and learned to create apps with <em>ruby on rails</em>.
+          During the pandemic, I discovered my passion for <em>UX and UI design</em>. I taught myself how to use <em>Figma</em> and <em>AdobeXD</em>, and built several projects as I completed the <a href="https://www.coursera.org/professional-certificates/google-ux-design">Google UX Design Professional Course</a>.
+          <br><br>
+          After learning HTML, CSS, and JavaScript on my own, I decided to join a bootcamp at <a href="https://www.lewagon.com/tokyo">Le Wagon Tokyo</a> to learn <em>full-stack web development</em>. I'm currently learning to create apps with <em>Ruby on Rails</em>.
         </p>
       </div>
       <h2>&lt;/<em>about</em>&gt;</h2>
@@ -65,35 +68,47 @@
     <div class="section" id="project" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
       <h2>&lt;<em>projects</em>&gt;</h2>
       <div class="section-body">
-        <div class="project-container" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
+        <div class="card-project-container" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
           <h3>Project 1 - Nov 2022</h3>
-          <div class="project-img"></div>
+          <div class="project-img" id="project_1">
+            <a href="https://www.google.com/" class='card-link'></a>
+            <h4>Project Title</h4>
+            <p>A short description</p>
+          </div>
         </div>
         <br><br>
-        <div class="project-container" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
+        <div class="card-project-container" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
           <h3>Project 2 - Dec 2022</h3>
-          <div class="project-img"></div>
+          <div class="project-img" id="project_2">
+            <a href="https://www.google.com/" class='card-link'></a>
+            <h4>Project Title</h4>
+            <p>A short description</p>
+          </div>
         </div>
         <br><br>
-        <div class="project-container" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
+        <div class="card-project-container" data-aos="flip-left" data-aos-duration="1600" data-aos-once="true">
           <h3>Project 3 - TBA</h3>
-          <div class="project-img"></div>
+          <div class="project-img" id="project_3">
+            <a href="https://www.google.com/" class='card-link'></a>
+            <h4>Project Title</h4>
+            <p>A short description</p>
+          </div>
         </div>
       </div>
       <h2>&lt;/<em>projects</em>&gt;</h2>
     </div>
 
     <footer>
-      <div class="footer-container">
-        <ul id="social">
+      <div class="container footer">
+        <ul>
           <li class="inline">
-            <a href="https://www.linkedin.com/in/joycehwchan/" target="_blank" class="social"><i class="fa-brands fa-linkedin-in"></i></a></i>
+            <a href="https://www.linkedin.com/in/joycehwchan/" target="_blank" class="social"><i class="fa-brands fa-linkedin-in social-icon"></i></a></i>
           </li>
           <li class="inline">
-            <a href="https://github.com/joycehwchan" target="_blank" class="social"></a><i class="fa-brands fa-github"></i></a>
+            <a a href="https://github.com/joycehwchan" target="_blank" class="social"><i class="fa-brands fa-github social-icon"></i></a>
           </li>
           <li>
-            <a href="#" class="social"></a><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social"></a><i class="fa-brands fa-instagram social-icon"></i></a>
           </li class="inline">
         </ul>
       </div>
